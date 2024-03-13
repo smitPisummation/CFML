@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* main::before{
+    content: '';
+    background-image: url(./imgs/bg-img-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+
+} */
+/* h1{
+    font-size: 60px;
+} */
+.text-color{
+    color: rgb(194, 139, 0);
+}
+.bg-color{
+    background-color: rgb(254, 247, 229);
+}
+.inner-div{
+    /* right: -70px; */
+    height: 85%;
+    width: 30%;
+    background-color: rgb(254, 247, 229);
+    border-radius: 30px;
+}
+.inner-div::-webkit-scrollbar {
+    display: none;
+}

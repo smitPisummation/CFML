@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: rgb(194, 139, 0);
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+main::before{
+    content: '';
+    background-image: url(./imgs/bg-img-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+
+}
+.left-div{
+    position: relative;
+    left: -150px;
+    height: 50%;
+}
+.left-div>h1{
+    font-size: 60px;
+    color: rgb(194, 139, 0);
+    margin-bottom: 20px;
+}
+.left-div>h2{
+    font-size: 30px;
+    color: rgb(194, 139, 0);
+    margin-left: 10px;
+}
+.plane-img{
+    height: 350px;
+    width: 500px;
+    background-color: transparent;
+}
+
+.inner-div{
+    position: relative;
+    right: -70px;
+    height: 85%;
+    width: 30%;
+    background-color: rgb(254, 247, 229);
+    padding: 25px 20px 25px 20px;
+    border-radius: 30px;
+    overflow-y: auto;
+}
+.inner-div::-webkit-scrollbar {
+    display: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+fieldset{
+    border-color: rgb(247, 206, 102);
+    border-style: solid;
+}
+legend{
+    margin-left: 5px;
+    color: rgb(194, 139, 0) ;
+    font-size: 14px;
+    
+}
+.inpField{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    padding-left: 12px;
+    color: rgb(194, 139, 0);
+    font-weight: 500;
+    background-color: rgb(254, 247, 229);
+}
+#otherLocation,#otherOpt,#otherContact{
+    border-color: rgb(247, 206, 102);
+    border-style: solid;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    padding-left: 12px;
+    color: rgb(194, 139, 0);
+    font-weight: 500;
+    background-color: rgb(254, 247, 229);
+}
+input[type='text']:focus, input[type='email']:focus,input[type='tel']:focus{
+    outline: none;
+}
+
+.contact-method{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin-left: 5px;
+    /* border: 1px solid; */
+}
+span{
+    display: block;
+}
+
+#findUs{
+    border-radius: 50px;
+    height: 30px;
+    width: 50%;
+    padding: 0 10px 0 5px;
+    color: rgb(194, 139, 0);
+    border-color: rgb(194, 139, 0);
+}
+select:focus{
+    outline-color: rgb(194, 139, 0);
+}
+option{
+    color: rgb(194, 139, 0);
+}
+.dates{
+    border-style: solid;
+    border-color: rgb(194, 139, 0);
+    height: 100%;
+    width: 21%;
+    padding: 5px 8px 5px 8px;
+    color: rgb(194, 139, 0);
+    font-weight: 600;
+    background-color: white;
+}
+
+button{
+    border: none;
+    width: 30%;
+    height: 30px;
+    align-self: center;
+    background-color:rgb(233, 188, 72) ;
+}
+input[type=button] {
+    border: none;
+    background-color:rgb(233, 188, 72) ;
+
+}
+
+#prefered-location{
+    /* border-radius: 50px; */
+    height: 100%;
+    width: 50%;
+    padding: 0 10px 0 5px;
+    color: rgb(194, 139, 0);
+    border-color: rgb(194, 139, 0);
+}
