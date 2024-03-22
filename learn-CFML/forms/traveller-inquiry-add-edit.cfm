@@ -53,35 +53,39 @@
                     <form action="inquiry-action.cfm" method="post"  name="inquiryForm" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="#url.id#">
 
-                        <!--- <cfdump var="#form.name#" /> --->
                         <fieldset>
                             <legend>Travller Name</legend>
                             <input type="text" name="fullName" id="name" placeholder="Eg : Xyz Opq" class="inpField" value="#form.fullName#">
                         </fieldset>
 
-                        
                         <fieldset>
                             <legend>Travller Email</legend>
                             <input type="email" name="email" id="email" placeholder="Eg : xyzop@gmail.com"  class="inpField" value="#form.email#">
                         </fieldset>
+
                         <fieldset>
                             <legend>Travller Phone</legend>
                             <input type="tel" name="phone" id="phone" placeholder="Eg : 9988775566"   class="inpField" value="#form.phone#">
                         </fieldset>
+
                         <div class="contact-method">
                             <span>Prefer a method to Contact you :</span>
+
                             <div style="display: flex; align-items: center; gap: 4px;">
                                 <input type="checkbox" name="contact" id="contactByPhone" value="phone" <cfif listContainsNoCase(form.contact, "phone") > checked </cfif> />
                                 <label for="contactByPhone">Phone</label>
                             </div>
+
                             <div style="display: flex; align-items: center; gap: 4px;">
                                 <input type="checkbox" name="contact" id="contactByEmail" value="email" <cfif listContainsNoCase(form.contact, "email") > checked </cfif> >
                                 <label for="contactByEmail">Email</label>
                             </div>
+
                             <div style="display: flex; align-items: center; gap: 4px;">
                                 <input type="checkbox" name="contact" id="contactByWp" value="wp" <cfif listContainsNoCase(form.contact, "wp") > checked </cfif>  >
                                 <label for="contactByWp">WhatsApp</label>
                             </div>
+                            
                             <div style="display: flex; align-items: center; gap:4px;">
                                 <input type="checkbox" name="contact" id="contactByOther" value="contactByOther" onclick="addOtherField(this)" <cfif listContainsNoCase(form.contact, "contactByOther") >checked</cfif> /> 
                                 <label for="contactByOther">Other</label>     
